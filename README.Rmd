@@ -4,11 +4,15 @@ output: rmarkdown::github_document
 
 # htmlunitjars
 
+Java Archive Wrapper Supporting the 'htmlunit' Package
+
 ## Description
 
+Contents of the 'HtmlUnit' & supporting Java archives <http://htmlunit.sourceforge.net/>. Version number reflects the version number of the included 'JAR' file.
+    
 ## What's Inside The Tin
 
-The following functions are implemented:
+Everything necessary to use the HtmlUnit library directly via `rJava`.
 
 ## Installation
 

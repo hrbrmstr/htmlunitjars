@@ -4,12 +4,9 @@
 \name{htmlunitjars}
 \alias{htmlunitjars}
 \alias{htmlunitjars-package}
-\title{...}
+\title{Contents of the 'HtmlUnit' & supporting Java archives \url{http://htmlunit.sourceforge.net/}}
 \description{
-\itemize{
-\item URL: \url{https://gitlab.com/hrbrmstr/htmlunitjars}
-\item BugReports: \url{https://gitlab.com/hrbrmstr/htmlunitjars/issues}
-}
+Library JavaDoc: \url{http://htmlunit.sourceforge.net/apidocs/index.html}
 }
 \author{
 Bob Rudis (bob@rud.is)
