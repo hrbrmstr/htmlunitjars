@@ -74,7 +74,7 @@ Tell `HtmlUnit` to work like FireFox:
 ```{r}
 browsers <- J("com.gargoylesoftware.htmlunit.BrowserVersion")
 
-wc <- new(J("com.gargoylesoftware.htmlunit.WebClient"), browsers$FIREFOX_17)
+wc <- new(J("com.gargoylesoftware.htmlunit.WebClient"), browsers$CHROME)
 ```
 
 Tell it to wait for javascript to execute and not throw exceptions on page resource errors:
