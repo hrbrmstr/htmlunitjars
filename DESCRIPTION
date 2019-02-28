@@ -1,8 +1,8 @@
 Package: htmlunitjars
 Type: Package
 Title: Java Archive Wrapper Supporting the 'htmlunit' Package
-Version: 2.33.0
-Date: 2018-12-16
+Version: 2.34.0
+Date: 2019-02-28
 Authors@R: c(
     person("Bob", "Rudis", role = c("aut", "cre"), email = "bob@rud.is")
   )
