@@ -8,7 +8,8 @@ clean:
 	mvn clean
 
 deps:
-	mvn dependency:copy-dependencies -DoutputDirectory=deps
+	rm ../../inst/java/*.jar
+	mvn dependency:copy-dependencies -DoutputDirectory=../../inst/java
 
 new:
 	mvn archetype:generate -DgroupId=is.rud.htmlunit -DartifactId=htmlunit -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
