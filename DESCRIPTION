@@ -15,7 +15,7 @@ Authors@R: c(
     person("David K.", "Taylor", role = "ctb", comment = "HtmlUnit Java contributor")
   )
 SystemRequirements: Java
-Description: Contents of the 'HtmlUnit' & supporting Java archives <http://htmlunit.sourceforge.net/>.
+Description: Contents of the 'HtmlUnit' & supporting Java archives (<https://htmlunit.sourceforge.net/>).
     Version number reflects the version number of the included 'JAR' file.
 URL: https://gitlab.com/hrbrmstr/htmlunitjars
 BugReports: https://gitlab.com/hrbrmstr/htmlunitjars/issues

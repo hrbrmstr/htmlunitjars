@@ -5,7 +5,7 @@ developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.re
 [![Signed
 by](https://img.shields.io/badge/Keybase-Verified-brightgreen.svg)](https://keybase.io/hrbrmstr)
 ![Signed commit
-%](https://img.shields.io/badge/Signed_Commits-85.7%25-lightgrey.svg)
+%](https://img.shields.io/badge/Signed_Commits-100%25-lightgrey.svg)
 [![Linux build
 Status](https://travis-ci.org/hrbrmstr/htmlunitjars.svg?branch=master)](https://travis-ci.org/hrbrmstr/htmlunitjars)
 [![Coverage
@@ -21,8 +21,8 @@ Java Archive Wrapper Supporting the ‘htmlunit’ Package
 ## Description
 
 Contents of the ‘HtmlUnit’ & supporting Java archives
-<http://htmlunit.sourceforge.net/>. Version number reflects the version
-number of the included ‘JAR’ file.
+(<https://htmlunit.sourceforge.net/>). Version number reflects the
+version number of the included ‘JAR’ file.
 
 > *`HtmlUnit` is a “GUI-Less browser for Java programs”. It models HTML
 > documents and provides an API that allows you to invoke pages, fill
@@ -57,6 +57,8 @@ remotes::install_git("https://git.rud.is/hrbrmstr/htmlunitjars.git")
 remotes::install_git("https://git.sr.ht/~hrbrmstr/htmlunitjars")
 # or
 remotes::install_gitlab("hrbrmstr/htmlunitjars")
+# or
+remotes::install_bitbucket("hrbrmstr/htmlunitjars")
 # or
 remotes::install_github("hrbrmstr/htmlunitjars")
 ```
