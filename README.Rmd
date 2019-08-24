@@ -1,16 +1,19 @@
 ---
-output: rmarkdown::github_document
+output: 
+  rmarkdown::github_document:
+    df_print: kable
 ---
-```{r include=FALSE}
-knitr::opts_chunk$set(message=FALSE, warning=FALSE)
+```{r pkg-knitr-opts, include=FALSE}
+hrbrpkghelpr::global_opts()
 ```
-# htmlunitjars
 
-Java Archive Wrapper Supporting the 'htmlunit' Package
+```{r badges, results='asis', echo=FALSE, cache=FALSE}
+hrbrpkghelpr::stinking_badges()
+```
 
-## Description
-
-Contents of the `HtmlUnit` & supporting Java archives <http://htmlunit.sourceforge.net/>. Version number reflects the version number of the included 'JAR' file.
+```{r description, results='asis', echo=FALSE, cache=FALSE}
+hrbrpkghelpr::yank_title_and_description()
+```
 
 >_`HtmlUnit` is a "GUI-Less browser for Java programs". It models HTML documents and provides an API that allows you to invoke pages, fill out forms, click links, etc... just like you do in your "normal" browser._
 >
@@ -20,26 +23,21 @@ Contents of the `HtmlUnit` & supporting Java archives <http://htmlunit.sourcefor
 >
 >_`HtmlUnit` is not a generic unit testing framework. It is specifically a way to simulate a browser._
     
-
 ## What's Inside The Tin
 
 Everything necessary to use the HtmlUnit library directly via `rJava`.
 
-`HtmlUnit` Library JavaDoc: <http://htmlunit.sourceforge.net/apidocs/index.html>
+`HtmlUnit` Library JavaDoc: <https://htmlunit.sourceforge.net/apidocs/index.html>
 
 ## Installation
 
-```{r eval=FALSE}
-devtools::install_github("hrbrmstr/htmlunitjars")
-```
-
-```{r message=FALSE, warning=FALSE, error=FALSE, include=FALSE}
-options(width=120)
+```{r install-ex, results='asis', echo=FALSE, cache=FALSE}
+hrbrpkghelpr::install_block()
 ```
 
 ## Usage
 
-```{r message=FALSE, warning=FALSE, error=FALSE}
+```{r lib, cache=FALSE}
 library(htmlunitjars)
 
 # current verison
@@ -51,7 +49,7 @@ packageVersion("htmlunitjars")
 
 `xml2::read_html()` cannot execute javascript so the traditional approach won't work:
 
-```{r}
+```{r go1}
 library(rvest)
 
 test_url <- "https://hrbrmstr.github.io/htmlunitjars/index.html"
@@ -65,13 +63,13 @@ html_table(doc)
 
 We _can_ do this with the classes from `HtmlUnit` proivided by this JAR wrapper package:
 
-```{r}
+```{r go2}
 library(htmlunitjars)
 ```
 
 Tell `HtmlUnit` to work like FireFox:
 
-```{r}
+```{r go3}
 browsers <- J("com.gargoylesoftware.htmlunit.BrowserVersion")
 
 wc <- new(J("com.gargoylesoftware.htmlunit.WebClient"), browsers$CHROME)
@@ -79,7 +77,7 @@ wc <- new(J("com.gargoylesoftware.htmlunit.WebClient"), browsers$CHROME)
 
 Tell it to wait for javascript to execute and not throw exceptions on page resource errors:
 
-```{r}
+```{r go4}
 invisible(wc$waitForBackgroundJavaScriptStartingBefore(.jlong(2000L)))
 
 wc_opts <- wc$getOptions()
@@ -89,7 +87,7 @@ wc_opts$setThrowExceptionOnScriptError(FALSE)
 
 Now, acccess the site again and get the table:
 
-```{r}
+```{r go5}
 pg <- wc$getPage(test_url)
 
 doc <- read_html(pg$asXml())
@@ -100,3 +98,9 @@ html_table(doc)
 No need for Selenium or Splash!
 
 The ultimate goal is to have an `htmlunit` package that provides a nicer API than needing to know how to work with `rJava` directly.
+
+## htmlunitjars Metrics
+
+```{r cloc, echo=FALSE}
+cloc::cloc_pkg_md()
+```
