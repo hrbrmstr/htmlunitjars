@@ -1,8 +1,8 @@
 Package: htmlunitjars
 Type: Package
 Title: Java Archive Wrapper Supporting the 'htmlunit' Package
-Version: 2.36.0
-Date: 2019-08-24
+Version: 2.37.0
+Date: 2020-02-09
 Authors@R: c(
     person("Bob", "Rudis", role = c("aut", "cre"), email = "bob@rud.is"),
     person("Mike", "Bowlder", role = "aut", comment = "Original HtmlUnit Java author"),
@@ -27,4 +27,4 @@ Suggests:
 Depends:
     R (>= 3.2.0),
     rJava
-RoxygenNote: 6.1.1
+RoxygenNote: 7.0.2

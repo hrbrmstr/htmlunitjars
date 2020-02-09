@@ -3,7 +3,6 @@
 \docType{package}
 \name{htmlunitjars}
 \alias{htmlunitjars}
-\alias{htmlunitjars-package}
 \title{Contents of the 'HtmlUnit' & supporting Java archives \url{http://htmlunit.sourceforge.net/}}
 \description{
 Library JavaDoc: \url{http://htmlunit.sourceforge.net/apidocs/index.html}
