@@ -1,8 +1,8 @@
 Package: htmlunitjars
 Type: Package
 Title: Java Archive Wrapper Supporting the 'htmlunit' Package
-Version: 2.37.0
-Date: 2020-02-09
+Version: 2.38.0
+Date: 2020-03-10
 Authors@R: c(
     person("Bob", "Rudis", role = c("aut", "cre"), email = "bob@rud.is"),
     person("Mike", "Bowlder", role = "aut", comment = "Original HtmlUnit Java author"),
@@ -17,8 +17,8 @@ Authors@R: c(
 SystemRequirements: Java
 Description: Contents of the 'HtmlUnit' & supporting Java archives (<https://htmlunit.sourceforge.net/>).
     Version number reflects the version number of the included 'JAR' file.
-URL: https://gitlab.com/hrbrmstr/htmlunitjars
-BugReports: https://gitlab.com/hrbrmstr/htmlunitjars/issues
+URL: https://git.rud.is/hrbrmstr/htmlunitjars
+BugReports: https://git.rud.is/hrbrmstr/htmlunitjars/issues
 License: Apache License 2.0 | file LICENSE
 Encoding: UTF-8
 Suggests:
