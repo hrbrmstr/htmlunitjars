@@ -50,7 +50,7 @@ Everything necessary to use the HtmlUnit library directly via `rJava`.
 ## Installation
 
 ``` r
-install.packages("htmlunitjars", repos = "https://cinc.rud.is")
+install.packages("htmlunitjars", repos = c("https://cinc.rud.is", "https://cloud.r-project.org/"))
 # or
 remotes::install_git("https://git.rud.is/hrbrmstr/htmlunitjars.git")
 # or
@@ -73,7 +73,7 @@ library(htmlunitjars)
 
 # current verison
 packageVersion("htmlunitjars")
-## [1] '2.38.0'
+## [1] '2.39.0'
 ```
 
 ### Give It A Go
