@@ -73,7 +73,7 @@ library(htmlunitjars)
 
 # current verison
 packageVersion("htmlunitjars")
-## [1] '2.39.0'
+## [1] '2.40.0'
 ```
 
 ### Give It A Go
