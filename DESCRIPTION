@@ -27,4 +27,4 @@ Suggests:
 Depends:
     R (>= 3.6.0),
     rJava
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
