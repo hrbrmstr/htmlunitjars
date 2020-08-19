@@ -19,9 +19,9 @@ expect_equal(prox$getProxyPort(), 0)
 wc_opts$setThrowExceptionOnFailingStatusCode(FALSE)
 wc_opts$setThrowExceptionOnScriptError(FALSE)
 
-test_url <- "https://hrbrmstr.github.io/htmlunitjars/index.html"
+test_url <- "https://httpbin.org/"
 
 pg <- wc$getPage(test_url)
 
-expect_equal(pg$getTitleText(), "")
+expect_equal(pg$getTitleText(), "httpbin.org")
 
