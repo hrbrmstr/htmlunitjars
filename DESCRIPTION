@@ -17,8 +17,7 @@ Authors@R: c(
 SystemRequirements: Java
 Description: Contents of the 'HtmlUnit' & supporting Java archives (<https://htmlunit.sourceforge.net/>).
     Version number reflects the version number of the included 'JAR' file.
-URL: https://git.rud.is/hrbrmstr/htmlunitjars
-BugReports: https://git.rud.is/hrbrmstr/htmlunitjars/issues
+URL: https://github.com/hrbrmstr/htmlunitjars
 License: Apache License 2.0 | file LICENSE
 Encoding: UTF-8
 Suggests:
